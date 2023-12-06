@@ -11,8 +11,8 @@ import { useTheme } from '@/context/themeContext';
 import { educationData } from '@/lib/data';
 
 export default function Education() {
+  const { ref } = useSectionInView('Education');
   const { theme } = useTheme();
-  const { ref, inView } = useSectionInView('Education', 0.3);
 
   return (
     <section id='education' ref={ref} className='mb-28 scroll-mt-28 sm:mb-40'>
@@ -22,7 +22,6 @@ export default function Education() {
         {educationData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-              visible={inView}
               contentStyle={{
                 background:
                   theme === 'light' ? '#f3f4f6' : '#1f2937',

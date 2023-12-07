@@ -2,7 +2,7 @@
 
 ## Technology
 
-- Latest Next.js
+- Next.js
 - Next.js App Router
 - Next.js Server Actions
 - Client & Server Components
